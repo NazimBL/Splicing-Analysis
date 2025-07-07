@@ -1,4 +1,4 @@
-  GNU nano 7.2                                                   trim.sh                                                             #!/bin/bash
+#!/bin/bash
 #SBATCH --job-name=trim_qc_baseline
 #SBATCH --output=trim_qc_baseline.out
 #SBATCH --error=trim_qc_baseline.err
