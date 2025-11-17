@@ -1,0 +1,18 @@
+# Large sequencing data
+*.bam
+*.bai
+*.sam
+*.fastq
+*.fq
+*.fq.gz
+*.log
+*_STARtmp/
+STARindex/
+rMATS_output/
+*.rMATS.*
+
+# Python cache
+__pycache__/
+*.pyc
+.env
+.venv
