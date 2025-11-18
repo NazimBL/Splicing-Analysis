@@ -33,11 +33,12 @@ This workflow was originally developed for the splicing analysis of multiple vir
 # Pipeline Overview
 ```mermaid
 flowchart LR
-    A[FASTQ] --> B[Trimming + QC<br/>(Trimmomatic, FastQC, MultiQC)]
-    B --> C[STAR Alignment<br/>(produces sorted BAM files)]
-    C --> D[rMATS Turbo<br/>(SE, RI, A3SS, A5SS, MXE)]
-    D --> E[Post-Splicing Analysis<br/>(filtering, gene mapping, event ranking)]
-    E --> F[Transcript-Level Mapping<br/>(isoform consequences)]
+    FASTQ[FASTQ] --> QC["Trimming + QC (Trimmomatic, FastQC, MultiQC)"]
+    QC --> STAR["STAR Alignment (produces sorted BAM files)"]
+    STAR --> RMATS["rMATS Turbo (SE, RI, A3SS, A5SS, MXE)"]
+    RMATS --> POST["Post-Splicing Analysis (filtering, gene mapping, event ranking)"]
+    POST --> TX["Transcript-Level Mapping (isoform consequences)"]
+
 
 
 
