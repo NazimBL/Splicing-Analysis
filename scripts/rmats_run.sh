@@ -27,8 +27,8 @@ find "$BAM_BASELINE" -name '*Aligned.sortedByCoord.out.bam' | sort | paste -sd, 
 find "$BAM_PEAK" -name '*Aligned.sortedByCoord.out.bam' | sort | paste -sd, - > "$OUTDIR/b2.txt"
 
 # Preview files
-echo "🧪 Baseline BAMs:"; cat "$OUTDIR/b1.txt"
-echo "🧪 Peak BAMs:"; cat "$OUTDIR/b2.txt"
+echo " Baseline BAMs:"; cat "$OUTDIR/b1.txt"
+echo " Peak BAMs:"; cat "$OUTDIR/b2.txt"
 
 # Run rMATS for paired-end
 python ~/rmats-turbo/run_rmats.py \
