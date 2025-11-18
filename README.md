@@ -37,8 +37,11 @@ flowchart LR
     STAR --> RMATS["rMATS Turbo (SE, RI, A3SS, A5SS, MXE)"]
     RMATS --> POST["Post-Splicing Analysis (filtering, gene mapping, event ranking)"]
     POST --> TX["Transcript-Level Mapping (isoform consequences)"]
+
+
+
 ---
-## Quick start guide
+# Quick start guide
 
 ### 1️⃣ Download FASTQ Files
 Edit your SRA accession list inside:
