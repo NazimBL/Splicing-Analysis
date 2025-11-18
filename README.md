@@ -29,4 +29,26 @@ This workflow was originally developed for the splicing analysis of multiple vir
 - Rank genes by splicing burden  
 - Summarize transcript-level impact  
  
+---
+#  Repository Structure
+
+Splicing-Analysis/
+│
+├── scripts/ # Main HPC pipeline (FASTQ → QC → STAR → rMATS)
+│ ├── download_sra.sh
+│ ├── trim_qc.sh
+│ ├── readLength.sh
+│ ├── readLengthMode.sh
+│ ├── build_star_index.sh
+│ ├── run_star_PE.sh
+│ ├── align_star_SE.sh
+│ └── rMATS_run.sh
+│
+├── post-splicing-analysis/ # Event filtering + annotation + ranking
+│ ├── filter_rmats_events.py
+│ ├── gene_name_map.py
+│ └── rank_genes_by_event_count.py
+│
+├── transcripts-mapping/ # Transcript-level impact assessment
+  └── (scripts summarizing isoform-level consequences)
 
