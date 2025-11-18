@@ -1,5 +1,5 @@
 #  Splicing-Analysis  
-*A Modular RNA-seq Alternative Splicing Pipeline *
+A Modular RNA-seq Alternative Splicing Pipeline 
 
 This repository provides a **modular**, and **reproducible** pipeline for performing alternative splicing analysis on RNA-seq data using **rMATS-turbo**, followed by **post-processing**, **gene annotation**, and **transcript-level interpretation**.
 
@@ -9,7 +9,7 @@ This workflow was originally developed for the splicing analysis of multiple vir
 
 #  Features
 
-### ** End-to-end RNA-seq splicing pipeline**
+### End-to-end RNA-seq splicing pipeline
 1. Download raw FASTQ data  
 2. Perform trimming + QC  
 3. Build STAR index  
@@ -39,6 +39,22 @@ flowchart LR
     RMATS --> POST["Post-Splicing Analysis (filtering, gene mapping, event ranking)"]
     POST --> TX["Transcript-Level Mapping (isoform consequences)"]
 
+---
+# Quick Start Guide
+Below is the full workflow, from raw FASTQ to fully processed results.
+ 
+---
+# Requirments
+
+Core Tools
+STAR ≥ 2.7
+rMATS-turbo ≥ 4.1.2
+Trimmomatic ≥ 0.39
+FastQC ≥ 0.11.9
+MultiQC
+samtools
+Python ≥ 3.8
+for Python dependencies nothing crazy just pandas, numpy etc..
 
 
 
