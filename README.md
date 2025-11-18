@@ -30,25 +30,37 @@ This workflow was originally developed for the splicing analysis of multiple vir
 - Summarize transcript-level impact  
  
 ---
-#  Repository Structure
+# Pipeline Overview
+FASTQ
+│
+▼
+┌──────────────┐
+│ Trimming + QC│ (Trimmomatic, FastQC, MultiQC)
+└──────┬───────┘
+│
+▼
+┌──────────────┐
+│ STAR Align │ (produces sorted BAM files)
+└──────┬───────┘
+│
+▼
+┌──────────────┐
+│ rMATS Turbo │ (SE, RI, A3SS, A5SS, MXE)
+└──────┬───────┘
+│
+▼
+┌──────────────────────────┐
+│ Post-Splicing Analysis │
+│ - filtering │
+│ - gene mapping │
+│ - event ranking │
+└──────┬───────────────────┘
+│
+▼
+┌──────────────────────────┐
+│ Transcript-Level Mapping │
+│ - isoform consequences │
+└──────────────────────────┘
 
-Splicing-Analysis/
-│
-├── scripts/ # Main HPC pipeline (FASTQ → QC → STAR → rMATS)
-│ ├── download_sra.sh
-│ ├── trim_qc.sh
-│ ├── readLength.sh
-│ ├── readLengthMode.sh
-│ ├── build_star_index.sh
-│ ├── run_star_PE.sh
-│ ├── align_star_SE.sh
-│ └── rMATS_run.sh
-│
-├── post-splicing-analysis/ # Event filtering + annotation + ranking
-│ ├── filter_rmats_events.py
-│ ├── gene_name_map.py
-│ └── rank_genes_by_event_count.py
-│
-├── transcripts-mapping/ # Transcript-level impact assessment
-  └── (scripts summarizing isoform-level consequences)
+
 
