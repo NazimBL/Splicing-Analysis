@@ -3,8 +3,7 @@
 
 This repository provides a **modular**, and **reproducible** pipeline for performing alternative splicing analysis on RNA-seq data using **STAR** and **rMATS-turbo**, followed by **post-processing**, **gene annotation**, and **transcript-level interpretation**.
 
-This workflow was originally developed for the splicing analysis of multiple viral infection models in *Macaca mulatta* (rhesus macaque), but it is written in a **dataset-agnostic**, **genome-agnostic**, and **reusable** way.  
-Anyone can adapt it to *any species*, *any dataset*.
+This workflow was originally developed for the splicing analysis of multiple viral infection models in *Macaca mulatta* (rhesus macaque), but it is written in a **dataset-agnostic**, **genome-agnostic**, and **reusable** way.  Anyone can adapt it to *any species*, *any dataset*.
 
 ---
 
