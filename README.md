@@ -31,12 +31,13 @@ This workflow was originally developed for the splicing analysis of multiple vir
  
 ---
 # Pipeline Overview
-FASTQ ▼ 
-    └──► Trimming + QC (Trimmomatic, FastQC, MultiQC) ▼
-            └──► STAR Align (sorted BAM files) ▼
-                    └──► rMATS Turbo (SE, RI, A3SS, A5SS, MXE) ▼
-                            └──► Post-Splicing Analysis (filtering, gene mapping, event ranking) ▼
-                                    └──► Transcript-Level Mapping (isoform consequences)
+```mermaid
+flowchart LR
+    A[FASTQ] --> B[Trimming + QC<br/>(Trimmomatic, FastQC, MultiQC)]
+    B --> C[STAR Alignment<br/>(produces sorted BAM files)]
+    C --> D[rMATS Turbo<br/>(SE, RI, A3SS, A5SS, MXE)]
+    D --> E[Post-Splicing Analysis<br/>(filtering, gene mapping, event ranking)]
+    E --> F[Transcript-Level Mapping<br/>(isoform consequences)]
 
 
 
