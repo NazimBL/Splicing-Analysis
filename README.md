@@ -37,7 +37,7 @@ flowchart LR
     STAR --> RMATS["rMATS Turbo (SE, RI, A3SS, A5SS, MXE)"]
     RMATS --> POST["Post-Splicing Analysis (filtering, gene mapping, event ranking)"]
     POST --> TX["Transcript-Level Mapping (isoform consequences)"]
-
+```
 
 
 ---
