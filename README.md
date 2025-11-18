@@ -191,14 +191,14 @@ Scripts in `transcripts-mapping/` allow you to:
 ---
 # Requirments
 
-Core Tools
-STAR ≥ 2.7
-rMATS-turbo ≥ 4.1.2
-Trimmomatic ≥ 0.39
-FastQC ≥ 0.11.9
-MultiQC
-samtools
-Python ≥ 3.8
+### Core Tools
+- STAR ≥ 2.7  
+- rMATS-turbo ≥ 4.1.2  
+- Trimmomatic ≥ 0.39  
+- FastQC ≥ 0.11.9  
+- MultiQC  
+- samtools  
+- Python ≥ 3.8  
 for Python dependencies nothing crazy just pandas, numpy etc..
 
 ---
