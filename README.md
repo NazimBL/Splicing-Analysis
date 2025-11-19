@@ -203,10 +203,8 @@ for Python dependencies nothing crazy just pandas, numpy etc..
 
 ---
 # Contributions
-Contributions, improvements, and suggestions are welcome!
-
-To contribute:
-Open an Issue, Submit a Pull Request, Request a new feature ! Looking forward to you bioinformaticians feedback !
+To contribute, open an issue, submit a pull request, request a new feature ! 
+Looking forward to you bioinformaticians feedback !
 
 Cheers.
 
